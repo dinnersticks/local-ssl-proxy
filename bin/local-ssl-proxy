@@ -3,9 +3,9 @@
 var fs = require('fs');
 var path = require('path');
 var proxy = require('http-proxy');
-var optimist = require('optimist');
+var yargs = require('yargs');
 
-var commandline = optimist.
+var commandline = yargs.
                     usage('Usage: $0 --hostname [host] --source [port] --target [port]').
                     alias({
                       n: 'hostname',
